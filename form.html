@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Biodata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1>TECH Community</h1>
+</header>
+
+<nav class="nav-menu">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="form.html" class="nav-btn">Biodata</a>
+    <a href="mulmed.html" class="nav-btn">Multimedia</a>
+</nav>
+
+
+<section class="container">
+    <form onsubmit="tambahData(event)" class="form-box">
+        <h2>Formulir Anggota</h2>
+
+        <label>Nama</label>
+        <input type="text" id="nama" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>No HP</label>
+        <input type="tel" id="hp" required>
+
+        <label>Alamat</label>
+        <textarea id="alamat" rows="3" required></textarea>
+
+        <label>Tanggal Lahir</label>
+        <input type="date" id="tgl">
+
+        <label>Jenis Kelamin</label>
+        <div class="inline">
+            <label><input type="radio" name="jk" value="Laki-laki" required> Laki-laki</label>
+            <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+        </div>
+
+        <label>Keahlian</label>
+        <div class="inline">
+            <label><input type="checkbox" value="Programming" class="skill"> Programming</label>
+            <label><input type="checkbox" value="Design" class="skill"> Design</label>
+            <label><input type="checkbox" value="Networking" class="skill"> Networking</label>
+        </div>
+
+        <label>Tentang Saya</label>
+        <textarea id="tentang"></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
